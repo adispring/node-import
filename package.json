@@ -1,0 +1,17 @@
+{
+  "name": "node-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4"
+  }
+}
