@@ -8,7 +8,7 @@
 
 This preset includes the following plugins:
 
-- ##syntax-dynamic-import##
+- syntax-dynamic-import
 - transform-class-properties
 - transform-decorators – disabled pending proposal update (can use the legacy transform in the meantime)
 
@@ -47,6 +47,12 @@ require("./index.js");
 
 假如要在 `server.js` 中使用 `import`，先创建一个 `index.js`, 在 `index.js` 中先注册 babel: `require(babel-register)`, 此后，在 index.js 中使用 require  加载 .js、.jsx、.es 和 .es6 后缀名的文件，就会先用 Babel 进行转码。这样就可以在 server.js 中使用 `import` 了。
 
+index.js
+
+```js
+require("babel-register");
+require("./server.js");
+```
 
 ## Explaination
 
